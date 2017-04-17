@@ -1,10 +1,16 @@
-body {
-  color:red;
-}
-
 .header {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-4/htmlcss1-img_coffee-bgnd.jpeg");
   height: 400px;
   background-position: center center;
 }
-
+h1 {
+  color:rgb(3,150,100);
+color:rgba(3, 101, 100, 0.75);
+  font-family: 'Covered By Your Grace', sans-serif;
+  font-size: 100px;
+  line-height: 76px;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  top: 20%;
+}
