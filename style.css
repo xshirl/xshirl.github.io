@@ -28,19 +28,19 @@ color:rgba(3, 101, 100, 0.75);
   margin: 0;
   position: relative;
   text-align: center;
-  top: 35%;
+  top: 30%;
 }
 
 /** List style **/
 
 h2 {
-  color: #E4BB97;
+ 
   font-family: 'Raleway', sans-serif;
   font-size: 28px;
   font-weight: 500;
   text-align: left;
   text-transform: uppercase;
-  background-color:#AA8EB5;
+  
 }
 
 ul {
