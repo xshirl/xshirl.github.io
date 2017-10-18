@@ -8,7 +8,7 @@ box-sizing:border-box;
 }
 
 body {
-background-color: #fff;
+background-color: orange;
 margin: 0;
 top: 0;
 left:0;
@@ -32,17 +32,16 @@ font-size:16px;
 /* Site name in header text */
 
 #header-box {
-	background-color:black;
-	opacity:0.7;
-	padding: 1em;
 	display:inline-block;
-	border:1px solid black;
 	position:relative;
 	top:30%;
 	margin:auto;
 	z-index:2;	
 }
+
 #header-text {
+position:relative;
+top:30%;
 color:white;
 font-family:Lato;
 font-weight:600;
@@ -51,6 +50,14 @@ line-height:0.5em;
 text-transform:uppercase;
 }
 
+#header-text h1 {
+	color:white;
+	font-family:Lato;
+	font-weight:600;
+	font-size:2 em;
+	text-transform:uppercase;
+	text-shadow: 2px 2px black;	
+}
 #header-text p {
 	line-height:0.5em;
 	color:#CBCBCB;
@@ -106,7 +113,7 @@ font-size:20px;
 background-color:orange;
 color:white;
 margin-top:-20px;
-height:40vh;
+height:30vh;
 padding: 10px;
 padding-top:30px;
 text-align:center;
@@ -140,9 +147,24 @@ padding-top:30px;
 text-align:center;
 overflow-x:hidden;
 }
-#portfolio img {
+
+.float {
 	float:left;
-	padding: 20px;
+	padding:10px;
+	text-align:center;
+}
+
+.center {
+	float: right;
+
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
+}
+
+.center > .float {
+  position: relative;
+  left: 50%;
 }
 
 #experience {
@@ -219,3 +241,4 @@ background-image:url("images/yosemite.jpg");
 	color:black;
 	font-weight:700;
 	z-index:1;}
+	
