@@ -1,92 +1,76 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
+<!doctype html>
+<html>
+<head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Shirley Xu </title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Portfolio</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-<div class="header">
-<div id="header-box">
-<div id="header-text">
-<h1> Shirley Xu </h1>
-<p> <em> web designer </em> </p>
-</div>
-</div>
-</div>
+<div class="container">
 
-<div class="site-nav"> 
-<ul> <li> <a href="#about"> About </a> </li>
-<li> <a href="#portfolio"> Portfolio </a> </li>
-<li> <a href="#experience"> Experience </a> </li>
-<li> <a href="#contact"> Contact </a> </li>
-
-</ul>
-</div>
-
-<div class="bg_one"> </div>
-<div id="about">
-<h1 class="heading"> About </h1>
-    	<p class="content"> I graduated from Northwestern in 2016 with a BA in Biology and Chemistry. I am a
-New York native, and I'm currently working as a web designer. I am looking for opportunities in web development, web design, and software engineering.</p>
-
-
-</div> 
-
-
-<div class="bg_two"> </div> 
-
-<div id="portfolio"> 
-<h1 class="heading"> Portfolio </h1>
-<div class="center">
-<div class="float"><a href="http://www.ellos.us"><img src="images/el_refresh_100217.jpg" height="600" alt="Ellos"></a></div>
-<div class="float"><a href="http://www.bcoutlet.com"><img src="images/BCO_HP_091917.jpg" height="600" alt="BCO"></a></div>
-<div class="float"><a href="http://mrsec.northwestern.edu"><img src="images/mrsec.png" height="600"  alt="MRSEC"></a></div>
-</div>
-</div>
-
-<div class="bg_three"> </div>
-
-<div id="experience"> 
-<h1 class="heading"> Experience </h1>
-<div class="center">
-
-	<div class="float"><a href="http://www.fbbrands.com"><img src="images/fblogo.png" height="200" alt="FBBrands"></a></div>
-    <div class="float"><a href="http://mrsec.northwestern.edu"><img src="images/Northwestern_MRSEC.jpg" height="200" alt="MRSEC"></a></div>
-</div>
-</div>
-
-<div class="bg_four"> </div>
-
-<div id="contact">
-<h1 class="heading"> Contact </h1>
-<span class="fa-stack fa-4x">
-                        <a href="https://www.linkedin.com/in/shirley-xu-nyc/">
-                        <i class="fa fa-circle fa-stack-2x text-primary" style="color:white;"></i>
-                        <i class="fa fa-linkedin fa-stack-1x fa-inverse" style="color:black;"></i>
-                        </a>
-                    </span>
- <span class="fa-stack fa-4x">
-                        <a href="mailto:sxu@u.northwestern.edu">
-                        <i class="fa fa-circle fa-stack-2x text-primary" style="color:white;"></i>
-                        <i class="fa fa-envelope-o fa-stack-1x fa-inverse" style="color:black;"></i>
-                        </a>
-                    </span>
-<span class="fa-stack fa-4x">
-                        <a href="https://github.com/xshirl">
-                        <i class="fa fa-circle fa-stack-2x text-primary" style="color:white;"></i>
-                        <i class="fa fa-github fa-stack-1x fa-inverse" style="color:black;"></i>
-                        </a>
-                    </span>
+	<div class="row header">
+    
+    	<!-- <div class="col-md-6">
+        	<img class="img-responsive" src="http://via.placeholder.com/100x100" alt="logo">
+       </div> -->
+        
+         <div class="text-left text-uppercase">
+         	<h1 class="light pink"> Shirley Xu </h1>
+             <h4> web designer </h4>
+         </div>
+    </div>
+   
+    <hr>
+    
+   <nav class="navigation">
+   	<ul class="active">
+    	<li class="current-item"><a href="#about">About </a> </li>
+        <li><a href="#portfolio"> Portfolio </a> </li>
+        <li><a href="#">Contact </a> </li>
+     </ul>
+    </nav>
+    
+   <!-- <a class="toggle-nav" href="#">&#9776;</a> -->
+    
+    <div class="row">
+    	<div class="col-md-12">
+        	<h2 class="featured" id="about"> About </h2>
+            <p> I graduated from Northwestern University in 2016 with a BA in Biology/Chemistry. I have since then started a career in web design. I have skills in HTML, CSS, Adobe Photoshop, Adobe Dreamweaver, Javascript, JQuery, Bootstrap, and etc. 
+            </p>
+        </div>
+    </div>
+    
+    <div class="row">
+    	<div class="col-md-12 featured light">
+        	<h2 id="portfolio"> Portfolio </h2>
+        </div>
+     </div>
+    
+    <div class="row">
+    	<div class="col-md-4 padding text-center">
+        	<img class="img-responsive image-width" src="images/el_refresh_100217.jpg" height="600px" alt="image">
+            <h3 class="text-uppercase"> ELLOS </h3>
+            <p> http://www.ellos.us </p> 
+        </div>
+        
+        <div class="col-md-4 padding text-center">
+        	<img class="img-responsive image-width" src="images/BCO_HP_091917.jpg" height="600px" alt="image">
+            <h3 class="text-uppercase">BCO </h3>
+            <p> http://www.bcoutlet.com/</p>
+        </div>
+        
+        <div class="col-md-4 padding text-center">
+        	<img class="img-responsive image-width" src="images/mrsec.jpg" height="600px" alt="image">
+            <h3 class="text-uppercase">MRSEC </h3>
+            <p> http://mrsec.northwestern.edu</p>
+        </div>
+        
+    </div>
 </div>
 
-<div class="bg_five"> </div>
-
-<footer> 
-	<p><small>&copy 2017 Shirley Xu </small> </p>
-	</footer>
- 
 </body>
 </html>
