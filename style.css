@@ -9,6 +9,9 @@ body {
 	
 }
 
+p {
+font-size:14px;	
+}
 hr {
 	border:none;
 	border-bottom: 4px solid #eee;
