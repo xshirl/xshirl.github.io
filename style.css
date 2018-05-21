@@ -6,11 +6,11 @@
 
 body {
 	font-family: 'Lato', sans-serif;
-	
+
 }
 
 p {
-font-size:14px;	
+font-size:14px;
 }
 hr {
 	border:none;
@@ -23,7 +23,7 @@ hr {
 }
 
 .header {
-	margin-top:30px;	
+	margin-top:30px;
 }
 .about {
 	font-size:20px;
@@ -38,7 +38,7 @@ hr {
 }
 
 .image-width {
-	max-width:100%;	
+	max-width:100%;
 }
 
 .right {
@@ -48,7 +48,12 @@ hr {
 
 .center {
 	position:relative;
-	text-align:center;	
+	text-align:center;
+}
+
+.photocenter {
+  margin:0 auto;
+  width:80%;
 }
 @media only screen and (max-width:1200px) {
 	.padding {
@@ -56,18 +61,18 @@ hr {
 		max-width:100%;
 		height:auto;
 		}
-	
+
 	.featured {
-		color: black;	
+		color: black;
 	}
 }
 
 .navigation {
 	position:absolute;
 	top:10%;
-	right:10%;	
+	right:10%;
 	text-align:right;
-	
+
 }
 .navigation ul {
 	font-family:'Lato', sans-serif;
@@ -104,14 +109,14 @@ a {
 		top:30%;
 		left:0;
 	}}
-	
+
 @media only screen and (max-width:800px) {
 	.navigation {
 		position:absolute;
 		display:block;
-			
+
 	}
-	
+
 	.toggle-nav {
 		padding:20px;
 		float:right;
@@ -119,9 +124,9 @@ a {
 		background:#303030;
 		color:#777;
 		font-size:20px;
-		transition:color linear 0.15s	
+		transition:color linear 0.15s
 	}
-	
+
 	.toggle-nav:hover, toggle-nav.active {
 		text-decoration:none;
 		color:#66a992;
