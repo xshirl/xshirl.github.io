@@ -169,6 +169,10 @@ a {
   position:relative;
 }
 
-a {
-color:white;	
+a.linkColor {
+color:pink;	
+}
+
+a.linkColor:hover {
+color:#eeeeee;	
 }
