@@ -3,8 +3,12 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: #b2d8d8;
+    position:relative;
 }
 
+.grid {
+  padding-top: 50px;
+}
 .about {
     font-family: 'Georgia';
     text-align: center;
@@ -17,6 +21,8 @@ body {
 .container {
     max-width: 960px;
     width: 960px;
+    min-height: 100vh;
+    position:relative;
 }
 .wrapper {
     margin: 0 auto;
@@ -163,6 +169,9 @@ ul li {
 
   footer {
       color: teal;
+      position:absolute;
+    bottom:0;
+    width:100%;
   }
 /* @media screen and (min-width: 1000px) {
     .cell {
