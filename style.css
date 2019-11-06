@@ -35,7 +35,18 @@ body {
 .institutes {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills {
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+  color: #ddd;
+}
+
+.salmon {
+  color: salmon;
 }
 
 .contact {
@@ -138,15 +149,18 @@ ul li {
 .linkColor {
     color: salmon;
 }
+
+.linkColor2 {
+  color: teal;
+}
   .text {
     color:white;
     font-size:16px;
+    margin: 5px;
     position:absolute;
     top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    -ms-transform:translate(-50%, -50%);
-    text-align:center;
+    transform: translateY(-50%);
+    text-align:center; 
   }
 
   .cell {
@@ -166,11 +180,12 @@ ul li {
   }
 
   footer {
+    padding-top: 15px;
       color: teal;
       position:absolute;
     bottom:0;
     width:100%;
-
+    text-align:center;
     
   }
 
