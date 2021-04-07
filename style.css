@@ -215,7 +215,9 @@ a:visited {
   color: salmon;
   text-decoration: none;
 }
-
+.fa-angle-double-right {
+  color: salmon;
+}
 a {
   text-decoration: none;
 }
