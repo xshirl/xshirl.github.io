@@ -210,7 +210,9 @@ footer {
 .salmon {
   color: salmon;
 }
-
+a {
+  color: salmon;
+}
 a:visited {
   color: salmon;
   text-decoration: none;
