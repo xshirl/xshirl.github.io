@@ -1,91 +1,101 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shirley Xu</title>
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shirley Xu</title>
+  <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+
     <link rel="shortchut icon" href="img/favicon.ico" />
-  </head>
-  <body>
-    <div class="container1">
-      <div class="navBar">
-        <nav class="wrapper">
-          <ul class="main-nav" id="js-menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+</head>
+<body>
+  <nav>
+    <img src="img/sx_logo.png" class="logo" alt="logo"/>
+    <ul class="menu">
+      <li class="item"><a href="#about"> About </a> </li>
+      <li class="item"><a href="#projects"> Projects </a> </li>
+      <li class="item"><a href="#contact"> Contact </a> </li>
+    </ul>
 
-            <li><a href="XuResume.pdf">Resume</a></li>
-          </ul>
-        </nav>
+  </nav>
+
+  <section class="header">
+    <div class="header-grid">
+      <div class="header-grid-1">
+        <h1 class="animated fadeIn">Hi, my name is Shirley.</h1>
+        <h4 class="animated fadeIn">software engineer and full stack developer</h4>
+        <h4 class="animated fadeIn"> I like to solve meaningful problems. </h4>
+
+        <h4 class="animated fadeIn salmon">Let's work together <a href="#contact"><i class="fa fa-angle-double-right"></i></a> </h4>
       </div>
-      <section class="header">
-        <div id="app" class="typewriter"></div>
-      </section>
-      <div class="container">
-        <section class="about">
-          <h1 id="#about">About</h1>
-          <img class="profile" src="img/sxu-bay.png" width="200px" />
-          <div class="contact">
-            <a class="icon" href="https://linkedin.com/in/shirley-xu-nyc"
-              ><i class="fa fa-linkedin"></i
-            ></a>
-            <a class="icon" href="https://github.com/xshirl"
-              ><i class="fa fa-github"></i
-            ></a>
-            <a class="icon" href="mailto:xshirl525@gmail.com" target="_blank"
-              ><i class="fa fa-envelope"></i
-            ></a>
-          </div>
-          <p>
-            I am a software engineer and full stack developer based in New York
-            City. I am passionate about solving interesting problems and
-            learning cool technologies. I have worked as a front end developer
-            and a full stack engineer in the fin tech and healthcare industry. I
-            am looking for new opportunities to develop my skills.
+      <div class="header-grid-2">
+        <img class="animated fadeIn profile-img" src="img/sxu-bay.png" alt="profile" />
+      </div>
+    </div>
+
+
+  </section>
+  <hr />
+
+  <section id="about">
+    <h1 class="heading">About</h1>
+    <div class="about-grid">
+
+      <div class="about-grid-1">
+        <p>A New York native, I currently work for a cancer research
+          hospital as a bioinformatics software engineer. I develop full stack applications using Javascript and Python. I am passionate about healthcare technology and want to be part of mission-driven companies that deliver a large impact on society.
           </p>
-          <hr />
-        </section>
+          <p>During my free time, I like to read, write, draw, do yoga, meditate, go on nature walks, and blog.</p>
+      </div>
+      <div class="about-grid-2">
+        <div class="about-grid-3">
+          <p>Javascript</p>
+          <p>Python</p>
+          <p>Java</p>
+          <p>C++</p>
+          <p>HTML/CSS</p>
+          <p>SASS/SCSS</p>
 
-        <section class="projects">
-          <h1 id="projects">Projects</h1>
-<div class="row">
-            <div class="col-md-6">
-              <img class="scaleImg" src="img/consult.png" />
-            </div>
-            <div class="col-md-6">
-              <h2>Girls Who Consult</h2>
-              <p>
-                A demo website for Girls Who Consult
-              </p>
-              <h4>Tech Stack</h4>
-              <p>
-                React, CSS Grid + Flexbox, Javascript
-              </p>
-              <a class="project-links" href="https://girlswhoconsult.netlify.app/"
-                >Deployed Project</a
-              >
-              <a
-                class="project-links"
-                href="https://github.com/xshirl/girlsWhoConsult"
-                >Github</a
-              >
+        </div>
+        <div class="about-grid-4">
+          <p>Node</p>
+          <p>Express</p>
+          <p>React</p>
+          <p>Mongoose</p>
+          <p>Flask</p>
+          <p>JQuery</p>
 
-            </div>
-          </div>
+        </div>
+        <div class="about-grid-5">
+          <p>SQL</p>
+          <p>Postgres/MySQL</p>
+          <p>MongoDB</p>
+          <p>Mocha</p>
+          <p>Git</p>
+          <p>Docker</p>
 
-          <hr />
-          <div class="row">
-            <div class="col-md-6">
-              <h2>Co-vent</h2>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <hr>
+  <section id="projects">
+    <h1 class="heading">
+      Projects
+    </h1>
+    <div class="project-grid">
+      <div class="project-grid-1">
+        <img src="img/covent.png" alt="covent" class="project-img">
+
+      </div>
+      <div class="project-grid-2 text-center">
+        <h2>Co-vent</h2>
               <p>
                 A social networking platform for virtual events that I made with
                 a teammate for Auth0 hackathon.
@@ -99,70 +109,58 @@
                 >Deployed Project</a
               >
               <a
-                class="project-links"
-                href="https://github.com/xshirl/covent-auth0"
-                >Github</a
-              >
-            </div>
-            <div class="col-md-6">
-              <img class="scaleImg" src="img/covent.png" />
-            </div>
-          </div>
+              class="project-links"
+              href="https://github.com/xshirl/covent-auth0"
+              >Github</a
+            >
+      </div>
 
-          <hr />
+      <div class="project-grid-3 text-center">
+        <h2>Girls Who Consult</h2>
+        <p>
+          A demo website for Girls Who Consult
+        </p>
+        <h4>Tech Stack</h4>
+        <p>
+          React, CSS Grid + Flexbox, Javascript
+        </p>
+        <a class="project-links" href="https://girlswhoconsult.netlify.app/"
+          >Deployed Project</a
+        >
+        <a
+          class="project-links"
+          href="https://github.com/xshirl/girlsWhoConsult"
+          >Github</a
+        >
+      </div>
+      <div class="project-grid-4">
+        <img src="img/consult.png" alt="consult" class="project-img">
 
-          <div class="row">
-            <div class="col-md-6">
-              <img class="scaleImg" src="img/photosplash.png" />
-            </div>
-            <div class="col-md-6">
-              <h2>PhotoSplash</h2>
-              <p>A Pinterest clone that I made with React</p>
-              <h4>Tech Stack</h4>
-              <p>React, Javascript, Unsplash API</p>
-              <a
-                class="project-links"
-                href="http://xshirl-photosplash.netlify.app"
-                >Deployed Project</a
-              >
-              <a
-                class="project-links"
-                href="https://github.com/xshirl/photoSplash"
-                >Github</a
-              >
-            </div>
-          </div>
-          <hr />
-          <div class="row">
-            <div class="col-md-6">
-              <h2>Expense Tracker</h2>
-              <p>
-                A web application that keeps track of your income and expenses.
-              </p>
-              <h4>Tech Stack</h4>
-              <p>React, Javascript, HTML, CSS</p>
-              <a
-                class="project-links"
-                href="https://xshirl-expensetracker.netlify.app/"
-                >Deployed Project</a
-              >
-              <a
-                class="project-links"
-                href="https://github.com/xshirl/expensetracker"
-                >Github</a
-              >
-            </div>
-            <div class="col-md-6">
-              <img class="scaleImg" src="img/expensetracker.png" />
-            </div>
-          </div>
-          <hr />
-          <div class="row">
-            <div class="col-md-6">
-              <img class="scaleImg" src="img/textbooks.png" />
-            </div>
-            <div class="col-md-6">
-              <h2>Aexus Textbook Store</h2>
+      </div>
+      <div class="project-grid-5">
+        <img src="img/photosplash.png" alt="consult" class="project-img">
+
+      </div>
+      <div class="project-grid-6 text-center">
+        <h2>PhotoSplash</h2>
+        <p>A Pinterest clone that I made with React</p>
+        <h4>Tech Stack</h4>
+        <p>React, Javascript, Unsplash API</p>
+        <a
+          class="project-links"
+          href="http://xshirl-photosplash.netlify.app"
+          >Deployed Project</a
+        >
+        <a
+          class="project-links"
+          href="https://github.com/xshirl/photoSplash"
+          >Github</a
+        >
+
+      </div>
+
+      <div class="project-grid-7 text-center">
+        <h2>Aexus Textbook Store</h2>
               <p>
                 A textbook ecommerce store that I built during my time at
                 General Assembly
@@ -176,66 +174,61 @@
                 class="project-links"
                 href="https://github.com/xshirl/textbookapp"
                 >Github</a
-              >
-            </div>
-          </div>
+              > </div>
 
-          <hr />
-          <div class="row">
-            <div class="col-md-6">
-              <h2>The Great RGB Color Game</h2>
-              <p>
-                A game where you win if you match the rgb value with the right
-                color.
-              </p>
-              <h4>Tech Stack</h4>
-              <p>Javascript, HTML, CSS</p>
-              <a
-                class="project-links"
-                href="https://xshirl.github.io/rgbColorGame"
-                >Deployed Project</a
-              >
-              <a
-                class="project-links"
-                href="https://github.com/xshirl/rgbColorGame"
-                >Github</a
-              >
-            </div>
-            <div class="col-md-6">
-              <img class="scaleImg" src="img/rgb.png" />
-            </div>
-          </div>
-        </section>
-      </div>
+              <div class="project-grid-4">
+                <img src="img/textbooks.png" alt="consult" class="project-img">
 
-      <footer>
-        <p>Made with <span class="salmon">&hearts;</span> by Shirley</p>
-      </footer>
+              </div>
     </div>
+  </section>
+ <hr>
+  <section id="contact">
+    <h1 class="heading">Contact</h1>
+    <div class="contact">
+      <a class="icon" href="https://linkedin.com/in/shirley-xu-nyc"
+        ><i class="fa fa-linkedin"></i
+      ></a>
+      <a class="icon" href="https://github.com/xshirl"
+        ><i class="fa fa-github"></i
+      ></a>
+      <a class="icon" href="mailto:xshirl525@gmail.com" target="_blank"
+        ><i class="fa fa-envelope"></i
+      ></a>
+    </div>
+  </section>
 
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script>
-      var app = document.getElementById("app");
-      var typewriter = new Typewriter(app, {
-        loop: true,
+  <footer>
+    <p>Made with <span class="salmon">&hearts;</span> by Shirley</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
       });
-      typewriter
-        .typeString("Hi, I'm Shirley")
-        .pauseFor(2000)
-        .deleteAll()
-        .typeString("I am a <strong>software engineer</strong>")
-        .pauseFor(2000)
-        .deleteChars(17)
-        .typeString("<strong>full stack developer</strong>")
-        .pauseFor(2000)
-        .deleteChars(20)
-        .typeString("<strong>visionary</strong>")
-        .pauseFor(2000)
-        .deleteAll()
-        .typeString("Welcome.")
-        .pauseFor(2000)
-        .start();
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+    } // End if
+  });
+});
+</script>
+
+</body>
 </html>
