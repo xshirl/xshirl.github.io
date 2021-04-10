@@ -56,6 +56,47 @@ nav ul li {
 .logo {
   width: 100px;
 }
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 50%;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: salmon;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+i.fa-bars {
+  font-size: 30px;
+}
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  color: teal;
+}
+
+/* Style the active link (or home/logo) */
+
 /* end nav */
 
 /* Header  */
@@ -65,7 +106,7 @@ section.header {
 }
 .header-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
   grid-gap: 2rem;
 }
 .header-grid-1 h1 {
@@ -79,16 +120,14 @@ section.header {
   color: #99c4bc;
   font-weight: 400;
   font-size: 30px;
-  line-height: 0.1;
+  line-height: 1.3;
 }
 
 .header-grid-1 h4.salmon {
   color: salmon;
 }
 
-.header-grid-2 {
-  padding-left: 30%;
-}
+
 .profile-img {
   width: 300px;
 }
@@ -225,8 +264,15 @@ a {
 }
 
 .animated {
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated2 {
+  -webkit-animation-duration: 6s;
+  animation-duration:6s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -252,4 +298,34 @@ a {
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+}
+
+@media only screen and (max-width: 1014px) {
+  .header-grid {
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
+  }
+
+
+  .header-grid-2 {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  i.fa-bars {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  .topnav #myLinks {
+    display: none;
+  }
 }

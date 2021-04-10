@@ -13,13 +13,16 @@
     <link rel="shortchut icon" href="img/favicon.ico" />
 </head>
 <body>
-  <nav>
-    <img src="img/sx_logo.png" class="logo" alt="logo"/>
-    <ul class="menu">
+  <nav class="topnav">
+    <img src="img/sx_logo.png" class="logo active" alt="logo"/>
+    <ul class="menu" id="myLinks">
       <li class="item"><a href="#about"> About </a> </li>
       <li class="item"><a href="#projects"> Projects </a> </li>
       <li class="item"><a href="#contact"> Contact </a> </li>
     </ul>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
 
   </nav>
 
@@ -27,13 +30,13 @@
     <div class="header-grid">
       <div class="header-grid-1">
         <h1 class="animated fadeIn">Hi, I'm Shirley.</h1>
-        <h4 class="animated fadeIn">software engineer and full stack developer</h4>
-        <h4 class="animated fadeIn"> I like to solve meaningful problems. </h4>
+        <h4 class="animated2 fadeIn">software engineer and full stack developer <br/> I like to solve meaningful problems.</h4>
+      
 
-        <h4 class="animated fadeIn salmon">Let's work together <a href="#contact"><i class="fa fa-angle-double-right"></i></a> </h4>
+        <h4 class="animated2 fadeIn salmon">Let's work together <a href="#contact"><i class="fa fa-angle-double-right"></i></a> </h4>
       </div>
       <div class="header-grid-2">
-        <img class="animated fadeIn profile-img" src="img/sxu-bay.png" alt="profile" />
+        <img class="animated2 fadeIn profile-img" src="img/sxu-bay.png" alt="profile" />
       </div>
     </div>
 
@@ -211,6 +214,51 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+
+$(function ()
+{
+    var $window = $(window),
+        $nav = $('#myLinks');
+      
+    $window.on('resize', function ()
+    {
+        if ($window.width() > 750)
+        {
+            $nav.show();
+       
+        }
+    });
+});
+
+const hamburger = document.getElementsByClassName('fa-bars');
+  if(hamburger.display=="none") {
+    x.style.display="flex";
+    x.style.justifyContent = "space-between";
+  x.style.listStyleType= "none";
+  x.style.width = "50%";
+
+  } 
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
+  const hamburger = document.getElementsByClassName('fa-bars');
+  if(hamburger.display=="none") {
+    x.style.display="flex";
+    x.style.justifyContent = "space-between";
+  x.style.listStyleType= "none";
+  x.style.width = "50%";
+
+  } 
+  
+}
+
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
