@@ -19,6 +19,7 @@
       <li class="item"><a href="#about"> About </a> </li>
       <li class="item"><a href="#projects"> Projects </a> </li>
       <li class="item"><a href="#contact"> Contact </a> </li>
+      <li class="item"><a href="#photos"> Photos</a> </li>
     </ul>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
@@ -193,6 +194,74 @@
     </div>
   </section>
  <hr>
+ <section id="photos">
+  <h1 class="heading">
+    Photos
+  </h1>
+  <!-- Slideshow container -->
+ <div class="slideshow-container">
+ 
+     <!-- Full-width images with number and caption text -->
+     <div class="mySlides fade">
+       
+       <img src="img/butterfly.jpeg" alt="butterfly" >
+       
+     </div>
+   
+     <div class="mySlides fade">
+      
+       <img src="img/sky.jpeg" alt="butterfly" >
+       
+     </div>
+   
+     <div class="mySlides fade">
+       
+       <img src="img/garden.jpeg" alt="butterfly" >
+       
+     </div>
+ 
+     <div class="mySlides fade">
+       
+         <img src="img/couple.jpeg" alt="butterfly" width="560px" >
+         
+       </div>
+ 
+       <div class="mySlides fade">
+       
+         <img src="img/flowers.jpeg" alt="butterfly" >
+         
+       </div>
+ 
+       <div class="mySlides fade">
+       
+         <img src="img/sunset.jpeg" alt="butterfly" width="560px"  >
+         
+       </div>
+ 
+       <div class="mySlides fade">
+       
+         <img src="img/sakura.jpeg" alt="butterfly" width="560px" >
+         
+       </div>
+   
+     <!-- Next and previous buttons -->
+     <a class="prev arrow" onclick="plusSlides(-1)">&#10094;</a>
+     <a class="next arrow" onclick="plusSlides(1)">&#10095;</a>
+   </div>
+   <br>
+   
+   <!-- The dots/circles -->
+   <div style="text-align:center">
+     <span class="dot" onclick="currentSlide(1)"></span>
+     <span class="dot" onclick="currentSlide(2)"></span>
+     <span class="dot" onclick="currentSlide(3)"></span>
+     <span class="dot" onclick="currentSlide(4)"></span>
+     <span class="dot" onclick="currentSlide(5)"></span>
+     <span class="dot" onclick="currentSlide(6)"></span>
+     <span class="dot" onclick="currentSlide(7)"></span>
+   </div>
+
+   <hr>
   <section id="contact">
     <h1 class="heading">Contact</h1>
     <div class="contact">
@@ -214,6 +283,35 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
 
 $(function ()
 {
