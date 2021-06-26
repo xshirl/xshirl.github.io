@@ -127,9 +127,9 @@ section.header {
   color: salmon;
 }
 
-
 .profile-img {
-  width: 300px;
+  height: 300px;
+  border-radius: 20px;
 }
 /* end header  */
 
@@ -246,11 +246,12 @@ footer {
   border-top: 1px solid salmon;
 }
 
-
-
-
-.mySlides {display: none}
-img {vertical-align: middle;}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -260,7 +261,8 @@ img {vertical-align: middle;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -279,7 +281,7 @@ img {vertical-align: middle;}
   color: salmon;
   border: 1px solid salmon;
   height: 20px;
-  border-radius:50%;
+  border-radius: 50%;
   width: 20px;
   line-height: 20px;
 }
@@ -287,11 +289,11 @@ img {vertical-align: middle;}
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: salmon;
   color: white;
 }
@@ -329,11 +331,10 @@ img {vertical-align: middle;}
 }
 
 .mySlides img {
-  position:relative;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
-
 
 /* Fading animation */
 .fade {
@@ -344,20 +345,31 @@ img {vertical-align: middle;}
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
 }
-
 
 .salmon {
   color: salmon;
@@ -385,7 +397,7 @@ a {
 
 .animated2 {
   -webkit-animation-duration: 6s;
-  animation-duration:6s;
+  animation-duration: 6s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -419,15 +431,15 @@ a {
     grid-auto-flow: column;
   }
 
-
   .header-grid-2 {
-    display:none;
+    display: none;
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  .prev, .next {
-    display:none;
+  .prev,
+  .next {
+    display: none;
   }
 }
 
@@ -439,7 +451,7 @@ a {
 
 @media only screen and (min-width: 750px) {
   i.fa-bars {
-    display:none;
+    display: none;
   }
 }
 
